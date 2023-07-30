@@ -1,35 +1,20 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Ses+/app/src/main/java/com/mesflit/ses/MyBackgroundService.java",
+      "file": "/storage/emulated/0/AndroidIDEProjects/Ses+(Copy)/app/src/main/java/com/mesflit/ses/MainActivity.java",
       "selection": {
         "end": {
-          "column": 0,
+          "column": 32,
           "index": -1,
-          "line": 0
+          "line": 39
         },
         "start": {
-          "column": 0,
+          "column": 32,
           "index": -1,
-          "line": 0
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Ses+/app/src/main/java/com/mesflit/ses/MainActivity.java",
-      "selection": {
-        "end": {
-          "column": 0,
-          "index": -1,
-          "line": 0
-        },
-        "start": {
-          "column": 0,
-          "index": -1,
-          "line": 0
+          "line": 39
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Ses+/app/src/main/java/com/mesflit/ses/MainActivity.java"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Ses+(Copy)/app/src/main/java/com/mesflit/ses/MainActivity.java"
 }
