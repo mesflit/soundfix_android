@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private Button startButton;
     private Button stopButton;
-    private static final int BUFFER_SIZE = 2048; // Örnek bir önbellek boyutu
+    private static final int BUFFER_SIZE = 1048576; // 1 MB'lık önbellek boyutu
     private byte[] audioBuffer = new byte[BUFFER_SIZE];
     private int bytesRead;
     private boolean isRecording = false;
@@ -81,15 +81,15 @@ public class MainActivity extends AppCompatActivity {
     private void requestPermission() {
         if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.RECORD_AUDIO)) {
             new AlertDialog.Builder(this)
-                    .setTitle("İzin Gerekli")
-                    .setMessage("Ses kaydetmek için izin vermelisiniz.")
-                    .setPositiveButton("Tamam", new DialogInterface.OnClickListener() {
+                    .setTitle("Permission Required")
+                    .setMessage("App requires microphone access permission to work")
+                    .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.RECORD_AUDIO}, RECORD_AUDIO_PERMISSION_REQUEST_CODE);
                         }
                     })
-                    .setNegativeButton("İptal", null)
+                    .setNegativeButton("Cancel", null)
                     .create()
                     .show();
         } else {
@@ -111,9 +111,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void showPermissionDeniedDialog() {
         new AlertDialog.Builder(this)
-                .setTitle("İzin Reddedildi")
-                .setMessage("Ses kaydetmek için izin vermediğiniz için ses kaydedilemez.")
-                .setPositiveButton("Ayarlar", new DialogInterface.OnClickListener() {
+                .setTitle("Permission Denied")
+                .setMessage("The application does not work because there is no microphone access.")
+                .setPositiveButton("Settings", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 })
-                .setNegativeButton("İptal", null)
+                .setNegativeButton("Cancel", null)
                 .create()
                 .show();
     }

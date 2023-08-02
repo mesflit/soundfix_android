@@ -1,20 +1,20 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Ses+(Copy)/app/src/main/java/com/mesflit/ses/MainActivity.java",
+      "file": "/storage/emulated/0/AndroidIDEProjects/soundfix_android/app/src/main/AndroidManifest.xml",
       "selection": {
         "end": {
-          "column": 32,
+          "column": 43,
           "index": -1,
-          "line": 39
+          "line": 11
         },
         "start": {
-          "column": 32,
+          "column": 43,
           "index": -1,
-          "line": 39
+          "line": 11
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Ses+(Copy)/app/src/main/java/com/mesflit/ses/MainActivity.java"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/soundfix_android/app/src/main/AndroidManifest.xml"
 }
